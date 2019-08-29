@@ -1,33 +1,86 @@
+@font-face {
+  font-family: 'Anurati-Regular';
+  src: url('./fonts/Anurati-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gore-Regular';
+  src: url('./fonts/Gore-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./images/oasisBackground.jpg');
+  background-repeat: no-repeat;
+  color: white;
   display: flex;
+  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
+}
+.App-header {
+  padding-top: 25px;
+  height: auto;
+}
+.App-header:hover {
+  color: lightblue
+}
+.headerName {
+  font-family: 'Anurati-Regular';
+  font-size: 20pt;
+}
+.jobTitle {
+  font-family: 'Gore-Regular';
+  font-size: 35pt
+}
+.navigationDiv {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column
+}
+.navigationElement button{
+  font-family: 'Anurati-Regular';
+  padding: 50px;
+  font-size: 25px;
+  background: transparent;
+  border: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navigationElement button:hover{
+  font-family: 'Anurati-Regular';
+  padding: 50px;
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  color:lightskyblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (max-width: 1430px) and (min-width: 768px) {
+  .headerName {
+    font-size: 40pt;
   }
-  to {
-    transform: rotate(360deg);
+  .jobTitle {
+    font-size: 70pt
   }
+}
+
+
+@media only screen and (min-width: 1430px) {
+  .headerName {
+    font-size: 70pt;
+  }
+  .jobTitle {
+    font-size: 120pt
+  }
+}
+@media only screen and (max-width: 400px) {
+/* small screen Res */
 }
