@@ -69,10 +69,15 @@ a:visited {
   border: none;
   color:lightskyblue;
 }
-.page-About {
-  font-size: 100pt
+.nameAndrew {
+  font-family: 'Anurati-Regular'
 }
-
+.page-Setup {
+  background-color: darkgray;
+  opacity: .75;
+  margin: 5%;
+  padding:5%
+}
 @media only screen and (max-width: 1430px) and (min-width: 768px) {
   .headerName {
     font-size: 40pt;
