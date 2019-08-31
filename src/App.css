@@ -10,9 +10,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Dreamscape-Sans';
+  src: url('./fonts/Dreamscape-Sans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .App {
   height: 100vh;
   width: 100vw;
+}
+h2 {
+  font-family: 'Gore-Regular'
 }
 h4 {
   margin-block-start: 0em;
@@ -23,6 +32,9 @@ ul {
   margin-block-start: 0em;
   margin-block-end: 0em;
   padding-inline-start: 0px;
+}
+.jobEraDescription {
+  font-family: 'Dreamscape-Sans'
 }
 .jobEra {
   display: flex;
@@ -107,7 +119,10 @@ a:visited {
     font-size: 70pt
   }
 }
-
+.smImg {
+  height: 72px;
+  width: 72px
+}
 
 @media only screen and (min-width: 1430px) {
   .headerName {
